@@ -1,0 +1,28 @@
+{
+    "name": "tic tac toe",
+    "short_name": "tictactoe",
+    "start_url": ".",
+    "display": "standalone",
+    "description": "PWA",
+    "theme-color": "blue",
+    "background-color": "black",
+    "orientation": "landscape",
+    "icons": [
+        {
+            "src": "img/circle-copy.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "img/cross-copy.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+            
+        
+    ]
+
+
+
+
+}

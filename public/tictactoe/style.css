@@ -1,0 +1,270 @@
+body {
+  background-image: url('./img/back-image-bg.png'); 
+  background-size: cover;
+  font-family: cursive;
+
+}
+
+table {
+    border-collapse: collapse;
+  }
+  tr {
+      width: 399px;
+  }
+
+  td {
+      position: relative;
+      width: 133px;
+      height: 133px;
+      border: 133px;
+      cursor: pointer;
+  }
+
+  td:hover{
+      background-color: rgba(50, 161, 128, 0.7);
+  }
+
+  table td {
+    border: 5px solid white; 
+  }
+  table tr:first-child td {
+    border-top: 0;
+  }
+  table tr td:first-child {
+    border-left: 0;
+  }
+  table tr:last-child td {
+    border-bottom: 0;
+  }
+  table tr td:last-child {
+    border-right: 0;
+  }
+
+  .shape {
+      position: absolute;
+      
+      top: -15px;
+      left:0;
+      right:0;
+      bottom: 0;
+  }
+
+  .d-none{
+      display: none;
+  }
+
+  .winnerIs{
+      position: relative;
+      height: .25rem;
+      margin-top:auto;
+      margin-bottom: auto;
+      margin-left:auto;
+      margin-right:auto;
+      font-size: .25rem;
+      color: rgb(228, 50, 50);
+      font-weight: 900;
+      font-family: sans-serif;
+      word-wrap: normal;
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 1s;
+      opacity: 0;
+      -webkit-text-stroke: 4px rgb(0, 0, 0);
+  }
+
+  .game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .players {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 3rem;
+    opacity: 1;
+    transition: opacity 1s;
+  }
+
+  .playersInd{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2.5rem;
+    height: 100px;
+    padding: 10px;
+    margin: 5px;
+    color: white;
+  }
+
+  .playersInd img{
+    width: 60px;
+    height: 60px;
+  }
+
+  .player-active {
+    opacity: 1;
+    transition: opacity 0.5s;
+  }
+  
+  .player-inactive {
+    opacity: .5;
+    transition: opacity 0.5s;
+  }
+  .row{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .winOpacity {
+    opacity: 1;
+    transition: opacity .5s, font-size .5s, color .5s, -webkit-text-stroke .5s;
+    font-size: 5rem;
+  }
+
+  .horizontal-line {
+    background-color: aqua;
+    width: 300px;
+    height: 1px;
+    
+  }
+  
+  .make-vertical{
+    transform: rotate(90deg) scaleX(0.0);
+  }
+
+  .make-diagonal{
+    transform: rotate(45deg);
+    position: absolute;
+    top: 340px;
+    width: 520px !important;
+  }
+  .make-diagonal2{
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 340px;
+    width: 520px !important;
+  }
+
+
+  @keyframes zoomOut {
+    from{
+      opacity: 0;
+      transform: scale(0);
+    }
+
+    to{
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .restart-btn{
+    position: absolute;
+    left: 45%;
+    bottom: 10%;
+    height: 100px;
+    width:200px;
+    font-size: 2rem;
+    color: greenyellow;
+    background-color: black;
+    z-index: 2;
+    animation: zoomIn 2000ms ease-in-out;
+    box-shadow: 1px 1px 15px white;
+  }
+
+  .restart-btn:hover{
+    background-color: chartreuse;
+    color: black;
+    cursor: pointer;
+  }
+
+  .game-over{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 40%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    width: 100%;
+  }
+  h1{
+    color: white;
+  }
+  .glow{
+    font-size: xxx-large;
+    font-weight: 900;
+    text-align: center;
+    animation: glow 3s ease-in-out infinite alternate;
+    cursor: none;
+  }
+
+  @keyframes glow {
+    from {
+      color:blue; 
+      text-shadow: 0 0 15px yellow, 0 0 25px yellow, 0 0 35px yellow, 0 0 45px yellow, 0 0 55px yellow,  0 0 65px yellow,  0 0 75px yellow;
+    }
+    to {
+      color:yellow; 
+      text-shadow: 0 0 30px blue, 0 0 50px blue, 0 0 25px blue, 0 0 40px blue, 0 0 50px blue,  0 0 60px blue,  0 0 70px blue;
+    }
+    
+  }
+
+  .glow2{
+    font-size: xxx-large;
+    text-align: center;
+    animation: glow2 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes glow2 {
+    from {
+      color:red; 
+      text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px yellow, 0 0 40px yellow, 0 0 50px yellow,  0 0 60px yellow,  0 0 70px yellow;
+    }
+    to {
+      color:red; 
+      text-shadow: 0 0 15px blue, 0 0 25px blue, 0 0 35px blue, 0 0 45px blue, 0 0 55px blue,  0 0 65px blue,  0 0 75px blue;
+    }
+  }
+
+  .credits{
+   margin: 100px;
+    color:white;
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .goBack {
+    position: fixed;
+    bottom: 95px;
+    left: 25px;
+    transform: rotate(30deg);
+    width: 150px;
+    height: 75px;
+    z-index: 100;
+    font-size: x-large;
+    color: white;
+
+}
+
+.goBackText {
+    position:fixed;
+    bottom: 90px;
+    left:80px;
+    width: 150px;
+    z-index: 100;
+    font-size: larger;
+    color: white;
+}
+
+.header {
+  font-size: x-large;
+  line-height: 5px;
+}

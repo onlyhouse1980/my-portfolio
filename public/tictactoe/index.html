@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="manifest" href="manifest.webmanifest">
+    <script>
+        window.addEventListener('load', () => {
+            registerSW()
+        })
+    </script>
+</head>
+<body>
+    <a href="../index.html" class="goBackText"><img src="../img/arrow-white.png" class="goBack" style="width: 75px;">Back to Portfolio</button> </a>
+    
+    <img id="game-over" class="game-over d-none" src="./img/game-over1.png">
+    <button id="restartButton" onClick="window.location.reload();" class="restart-btn d-none">REMATCH!</button>
+    <div class="game" id="game">
+         <div class="game" id="game1">
+             <div class="header"><h1>Tic Tac Toe</h1></div>
+            <div class="players">
+                <div class="players" id="Player-1">
+                    <p class="playersInd glow">O</p>
+                    <h1 class="playersInd">Player 1</h1>
+                </div>
+                <div class="players"id="Player-2">
+                    <p class="playersInd glow">X</p>
+                    <h1 class="playersInd">Player 2</h1>
+                </div>
+            </div>
+            <div id="winnerIs" class="winnerIs glow2"></div>
+            <!-- <div id="line-1" class="horizontal-line" style="top:200px;transform:scaleX(0.0);"></div>
+            <div id="line-2" class="horizontal-line" style="top:340px"></div>
+            <div id="line-3" class="horizontal-line" style="top:480px"></div>
+            <div id="line-4" class="horizontal-line make-vertical" style;="top:338px;left:430px;scaleX(0.0);transform:rotate(90deg) "></div>
+            <div id="line-5" class="horizontal-line make-vertical" style;="top:338px;left:342 !important;"></div>
+            <div id="line-6" class="horizontal-line make-vertical" style;="top:338px;right:435px"></div>
+            <div id="line-7" class="horizontal-line" style;="position:absolute; top:343px;left: 498px; width: 525px;transform: rotate(-45deg) scaleX(0.0); "></div>
+            <div id="line-8" class="horizontal-line" style;="position:absolute; top:343px;right:503px; width: 525px;transform: rotate(45deg) scaleX(0.0); "></div> -->
+            <table id="table">
+                <tr>
+                    <td onclick="fillShape(0)"><p id='circle-0' class="glow shape d-none">O</p><p id='cross-0' class="glow shape d-none">X</p></td>
+                    <td onclick="fillShape(1)"><p id='circle-1' class="glow shape d-none">O</p><p id='cross-1' class="glow shape d-none">X</p></td>
+                    <td onclick="fillShape(2)"><p id='circle-2' class="glow shape d-none">O</p><p id='cross-2' class="glow shape d-none">X</p></td>
+                    
+                </tr>
+                <tr>
+                    <td onclick="fillShape(3)"><p id='circle-3' class="glow shape d-none">O</p><p id='cross-3' class="glow shape d-none">X</p></td>
+                    <td onclick="fillShape(4)"><p id='circle-4' class="glow shape d-none">O</p><p id='cross-4' class="glow shape d-none">X</p></td>
+                    <td onclick="fillShape(5)"><p id='circle-5' class="glow shape d-none">O</p><p id='cross-5' class="glow shape d-none">X</p></td>
+                    
+                </tr>
+                <tr>
+                    <td onclick="fillShape(6)"><p id='circle-6' class="glow shape d-none">O</p><p id='cross-6' class="glow shape d-none">X</p></td>
+                    <td onclick="fillShape(7)"><p id='circle-7' class="glow shape d-none">O</p><p id='cross-7' class="glow shape d-none">X</p></td>
+                    <td onclick="fillShape(8)"><p id='circle-8' class="glow shape d-none">O</p><p id='cross-8' class="glow shape d-none">X</p></td>
+                </tr>
+            </table>
+            <div class="credits">
+                Game Developer/Designer: <a mailto:"ryan@ryanernstnyberg.com">Ryan Ernst Nyberg</a>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    
+</div>
+<script>
+    async function fetchNews() {
+        const res = await fetch();
+        const json = await res.json();
+
+        const main = document.querySelector('main');
+
+        json.articles.forEach(article => {
+            const el = document.createElement('news-article');
+            el.article = article;
+            main.appendChild(el);
+        });
+    }
+
+    async function registerSW() {
+	if ('serviceWorker' in navigator) {
+		try {
+			await navigator.serviceWorker.register('./sw.js');
+		} catch (e) {
+			console.log(`SW registration failed`);
+}
+}
+}
+</script>
+</body>
+</html>
