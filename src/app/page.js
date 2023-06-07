@@ -30,15 +30,15 @@ export default function Home() {
                 <tr>
                   <td>
                     
-                    <a href="https://obcg.org"><img src="./img/obcg.webp"  /><br />obcg.org Public Utilities</a>
+                    <a href="https://obcg.org"><img src="/img/obcg.webp"  /><br />obcg.org Public Utilities</a>
                   </td>
                   <td>
-                    <a href="./html-site/index.html"><img src="./img/sakura.webp"  /><br />Sakura Ramen </a>  
+                    <a href="/html-site/index.html"><img src="./img/sakura.webp"  /><br />Sakura Ramen </a>  
                   </td>
                   </tr>
                   <tr>
                   <td>
-                    <a href="./html2/index.html" type="button"><img src="./img/dakademie.webp"  /><br />Developer Akademie</a>
+                    <a href="/html2/index.html" type="button"><img src="./img/dakademie.webp"  /><br />Developer Akademie</a>
                   </td>
                   <td>
                     <a href="./kochwelt/index.html" type="button"><img src="./img/kochwelt.webp"  /><br />Kochwelt</a>
@@ -72,7 +72,7 @@ export default function Home() {
                   </tr>
                   <tr>
                       <td>
-                        <a href="https://trelloesque.vercel.app/" type="button"><img src="./img/pokedex.webp"  /> <br /> Pokedex App</a>
+                        <a href="/pokedex/index.html" type="button"><img src="./img/pokedex.webp"  /> <br /> Pokedex App</a>
                       </td>
                       <td>
                         <a href="./fetch2/index.html" type="button"><img src="./img/thesaurus.webp"  /><br />Deutsch Thesaurus</a>
@@ -101,7 +101,7 @@ export default function Home() {
                     <a href="./tictactoe/index.html" type="button"><img src="./img/tictactoe.webp"  /><br />TicTacToe</a>
                   </td>
                   <td>
-                    <a href="#" type="button"><img src="./img/elpolloloco.webp"  /><br /> El Pollo Loco</a>
+                    <a href="/elpollo/index.html" type="button"><img src="./img/elpolloloco.webp"  /><br /> El Pollo Loco</a>
                   </td>
                   </tr>
                   <tr>
