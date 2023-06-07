@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import styles from './page.module.css'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -9,7 +10,7 @@ export default function Home() {
   <div className="header">
     <h1>Ryan Ernst Nyberg</h1>
     <h2>Full Stack Developer</h2>
-    <a href="mailto:ryan@ryanernstnyberg.com"><h3>ryan@ryanernstnyberg.com</h3></a>
+    <Link href="mailto:ryan@ryanernstnyberg.com"><h3>ryan@ryanernstnyberg.com</h3></Link>
   </div>     
   <div className="cards">
   
@@ -30,18 +31,18 @@ export default function Home() {
                 <tr>
                   <td>
                     
-                    <a href="https://obcg.org"><img src="/img/obcg.webp"  /><br />obcg.org Public Utilities</a>
+                    <Link href="https://obcg.org"><img src="/img/obcg.webp"  /><br />obcg.org Public Utilities</Link>
                   </td>
                   <td>
-                    <a href="/html-site/index.html"><img src="./img/sakura.webp"  /><br />Sakura Ramen </a>  
+                    <Link href="/html-site/index.html"><img src="./img/sakura.webp"  /><br />Sakura Ramen </Link>  
                   </td>
                   </tr>
                   <tr>
                   <td>
-                    <a href="/html2/index.html" type="button"><img src="./img/dakademie.webp"  /><br />Developer Akademie</a>
+                    <Link href="/html2/index.html" type="button"><img src="./img/dakademie.webp"  /><br />Developer Akademie</Link>
                   </td>
                   <td>
-                    <a href="./kochwelt/index.html" type="button"><img src="./img/kochwelt.webp"  /><br />Kochwelt</a>
+                    <Link href="./kochwelt/index.html" type="button"><img src="./img/kochwelt.webp"  /><br />Kochwelt</Link>
                   </td>
                 </tr>
                 
@@ -64,18 +65,18 @@ export default function Home() {
               <table id="table2" className="table">
                 <tr>
                   <td>
-                    <a href="https://weather.ryanernstnyberg.com/" type="button"><img src="./img/weather.webp"  /><br />  Weather App</a>
+                    <Link href="https://weather.ryanernstnyberg.com/" type="button"><img src="./img/weather.webp"  /><br />  Weather App</Link>
                   </td>
                   <td>
-                    <a href="https://trelloesque.vercel.app/" type="button"><img src="./img/projectmanager.webp"  /> <br /> Project Manager</a>
+                    <Link href="https://trelloesque.vercel.app/" type="button"><img src="./img/projectmanager.webp"  /> <br /> Project Manager</Link>
                   </td>
                   </tr>
                   <tr>
                       <td>
-                        <a href="/pokedex/index.html" type="button"><img src="./img/pokedex.webp"  /> <br /> Pokedex App</a>
+                        <Link href="/pokedex/index.html" type="button"><img src="./img/pokedex.webp"  /> <br /> Pokedex App</Link>
                       </td>
                       <td>
-                        <a href="./fetch2/index.html" type="button"><img src="./img/thesaurus.webp"  /><br />Deutsch Thesaurus</a>
+                        <Link href="./fetch2/index.html" type="button"><img src="./img/thesaurus.webp"  /><br />Deutsch Thesaurus</Link>
                       
 
                       </td>
@@ -98,16 +99,16 @@ export default function Home() {
               <table id="table3" className="table">
                 <tr>
                   <td>
-                    <a href="./tictactoe/index.html" type="button"><img src="./img/tictactoe.webp"  /><br />TicTacToe</a>
+                    <Link href="./tictactoe/index.html" type="button"><img src="./img/tictactoe.webp"  /><br />TicTacToe</Link>
                   </td>
                   <td>
-                    <a href="/elpollo/index.html" type="button"><img src="./img/elpolloloco.webp"  /><br /> El Pollo Loco</a>
+                    <Link href="/elpollo/index.html" type="button"><img src="./img/elpolloloco.webp"  /><br /> El Pollo Loco</Link>
                   </td>
                   </tr>
                   <tr>
                     <td>
-                      <a href="https://next-image-gallery-woad.vercel.app/" type="button"><img src="./img/NextJSImageGallery.png"  /><br />
-                      NextJS Image Gallery</a>
+                      <Link href="https://next-image-gallery-woad.vercel.app/" type="button"><img src="./img/NextJSImageGallery.png"  /><br />
+                      NextJS Image Gallery</Link>
                     </td>
                   </tr>
                  
