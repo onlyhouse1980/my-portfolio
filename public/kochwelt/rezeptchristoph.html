@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiegelei mit Speck</title>
+
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/recipe.css">
+
+    <!-- individual css -->
+    <link rel="stylesheet" href="css/rezeptchristoph.css">
+    <script src="./js/script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons+Round" rel="stylesheet">
+</head>
+
+<body onload="includeHTML()">
+
+    <!-- include header -->
+    <div w3-include-html="templates/header.html"></div>
+
+
+    <div class="section-home center-wrapper-content-container">
+        <div class="container-content">
+
+            <div class="sub-header">
+                <h1>Spiegelei mit Speck</h1>
+                <img src="./img/christoph/spiegelei1000.jpg" alt="">
+                <div class="recipe-icons">
+                    <div class="info-icons-box">
+                        <span class="material-icons-outlined info-icons">watch_later</span>
+                        <span>10 Min</span>
+                    </div>
+                    <div class="info-icons-box">
+                        <span class="material-icons-outlined info-icons">star_half</span>
+                        <span>Für Fortgeschrittene</span>
+                    </div>
+                    <div class="info-icons-box">
+                        <span class="material-icons-outlined info-icons">calendar_month</span>
+                        <span>22.01.2022</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-section">
+
+                <div class="portion-input">
+                    <b>Zutaten für:</b>
+                    <input type="text" placeholder="1">
+                    <a href="#" class="button-portion">Portion(en)</a>
+                </div>
+
+                <div class="recipe-table">
+                    <table cellspacing="0">
+                        <tr>
+                            <td>3</td>
+                            <td>Eier</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Scheiben Frühstücksspeck</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Rapsöl</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Butter</td>
+                        </tr>
+                        <tr>
+                            <td>100g</td>
+                            <td>Feldsalat</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Salz, Pfeffer</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Zehe Knoblauch</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="howto-section">
+                <h2>Zubereitung</h2>
+                <div class="recipe-icons">
+                    <div class="info-icons-box">
+                        <span class="material-icons-outlined info-icons">watch_later</span>
+                        <span>ca. 10 Min</span>
+                    </div>
+                    <div class="info-icons-box">
+                        <span class="material-icons-outlined info-icons">watch_later</span>
+                        <span>Gesamtzeit ca. 15 Min</span>
+                    </div>
+                </div>
+                <p>
+                    Die Pfanne auf höchster Stufe erhitzen und Öl hineingießen, ein wenig Butter hinzugeben. Die ganz
+                    Harten fügen anschließend eine kleingeschnittene Knoblauch-Zehe hinzu.
+                    Während die Pfanne erhitzt wird, werden die drei Scheiben Frühstückspeck in die Pfanne gelegt. Eine
+                    Minute später werden die drei Eier aufgeschlagen und über dem Speck ausgegossen.
+                    Das ganze lässt man nun nach gewünschtem Grad 3 - 5 Minuten brutzeln.
+                </p>
+                <p>
+                    Mit gekonntem Schwung platziert man den Pfannen-Inhalt auf einem Teller und gibt Salatblättchen,
+                    sowie Salz und Pfeffer, hinzu.
+                </p>
+                <p>
+                    Fertig und guten Appetit!
+                </p>
+            </div>
+
+            <div class="recipe-author-section">
+                <h3>Rezept erstellt von</h3>
+                <div class="recipe-author">
+                    <span class="material-icons-outlined">person</span>
+                    <span>Christoph</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- include footer -->
+    <div w3-include-html="templates/footer.html"></div>
+
+</body>
+
+</html>

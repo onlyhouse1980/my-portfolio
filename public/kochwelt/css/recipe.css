@@ -1,0 +1,125 @@
+.sub-header img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 2px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.384);
+    object-position: 50% 36%;
+}
+
+.recipe-icons {
+    display: flex;
+    gap: 16px;
+    margin-top: 22px;
+}
+
+.info-icons-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #EFEFEF;
+    padding: 4px;
+    border-radius: 2px;
+}
+
+.howto-section h2 {
+    margin-top: 0px;
+}
+
+.recipe-table table {
+    width: 100%;
+    border: none;
+    white-space: nowrap;
+}
+
+.recipe-table td {
+    padding: 8px;
+}
+
+.recipe-table tr {
+    border-radius: px;
+}
+
+.recipe-table tr:nth-child(odd) {
+    background-color: #EFEFEF;
+}
+
+.recipe-table td:nth-child(odd) {
+    width: 1%;
+    text-align: end;
+}
+
+tr:nth-child(odd) td:first-child {
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+tr:nth-child(odd) td:last-child { 
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px;
+}
+
+.recipe-author {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.recipe-author span:nth-child(odd) {
+    background-color: #E4E6E7;
+    font-size: 60px;
+    color: #AEB4B7;
+    border-radius: 50%;
+}
+
+.recipe-author span:nth-child(even) {
+    font-size: 24px;
+}
+
+/*
+button
+*/
+
+.portion-input {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.button-portion {
+    background-color: #008000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    box-shadow: 0 2px 10px 0 rgb(0 0 0 / 38%);
+    transition: all .2s cubic-bezier(.4, 0, .2, 1); 
+}
+
+.button-portion:hover {
+    background-color: #006400;
+    cursor: pointer;
+}
+
+.portion-input input {
+    border: 2px solid #008000;
+    height: 43px;
+    width: 50px;
+    text-align: center;
+    margin-left: 10px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+/*
+recipe mobile
+*/
+@media only screen and (max-width: 450px) {
+    .recipe-icons {
+        flex-direction: column;
+    }
+}

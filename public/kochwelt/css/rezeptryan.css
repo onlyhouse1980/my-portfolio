@@ -1,0 +1,22 @@
+.container {
+    margin-left: 20px;
+    max-width: 77vw;
+    
+}
+
+.sub-header img {
+    border-radius: 10px;
+    box-shadow: 6px 5px 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.home-img img {
+    box-shadow: 6px 5px 15px rgba(0,0,0, 0.5);
+}
+
+@media only screen and (max-width: 768px) {
+    .container{
+        margin-left: 20px;
+        max-width: 93vw;
+    }
+}
