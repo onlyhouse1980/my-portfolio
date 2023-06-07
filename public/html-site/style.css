@@ -1,0 +1,276 @@
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+}
+
+section1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: url("./images/bgr1.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 1050px;
+    color: white;
+    font-family: Raleway;
+}
+
+.logo {
+  margin: 2.5em 3em;
+  
+  width: 90px;
+  height: 90px;
+}
+
+.navbar {
+    
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: -100px;
+  }
+
+.nav {
+    padding-right: 7.75em;
+}
+
+a {
+    font-size: 25px;
+    font-family: Raleway;
+    font-weight: 700;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+  }
+
+nav button {
+    background-color: #8f050b;
+    margin-left: 40px;
+    color:white;
+    font-size: 25px;
+    font-family: Raleway;
+    font-weight: 700;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+nav button img {
+    margin-right: 10px;
+}
+
+.navbar p {
+    color: red;
+    font-size: 2em;
+    font-weight: 600;
+}  
+
+.intro p {
+    font-family: Raleway;
+    font-size: 1.5em;
+    line-height: 0em;
+}
+  
+.intro h1 {
+    font-family: Raleway;
+    font-size: 7em;
+    line-height: 1em;
+    flex-wrap: nowrap;
+    margin-top: 2.85em;
+}
+
+section.howto {
+    background-color: white;
+    background-size: cover;
+}
+
+.howto img {
+  width: 8em;
+  height: 6.5em;
+}
+
+.how-to-order h2{
+    padding-top: 2em;
+    font-family: Raleway;
+    font-weight: 700;
+}
+.ourmenu img {
+  margin: 3em 3em;
+  width: 400px;
+  height: 400px;
+}
+
+
+
+
+section.ourmenu {
+  background-image: url("./images/background.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+h2 {
+  font-size: 5em;
+  color: rgb(180, 5, 5);
+}
+h4 {
+  font-size: 3em;
+  font-weight: 600;
+  width: 5em;
+  font-family: Economica;
+
+}
+h3 {
+  font-size: 3.5em;
+  font-weight: 700; 
+  margin: 0;
+  text-align: left;
+}
+
+.price ul {
+  color: rgb(129, 129, 129);
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 1.5em;
+  padding-left: 0;
+  font-family: Raleway;
+}
+
+
+.navbar * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.howto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.menuitem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.howto{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+  display: flexbox;
+  flex-direction: column;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price li {
+  text-align: left;
+  font-family: Raleway;
+  font-weight: 700;
+}
+
+.menuitem>div{
+  width: 40%;
+  justify-content: space-around;
+  font-family: Economica;
+}
+
+.howto {
+  margin: 0 9em 4em 9em;
+  font-family: Economica;
+}
+.menu h2 {
+margin-top: 0.6em;
+padding-top: 2em;
+font-family: Economica;
+font-weight: 700;
+}
+
+.find-us-title h2 {
+    padding-top: 2em;
+    font-family: Economica;
+    font-weight: 700;
+}
+
+.find-us p {
+  font-size: 2.5em;
+  font-family: Raleway;
+  font-weight: 400;
+}
+
+.logo2 {
+    margin: 2em 2em;
+    width: 352px;
+    height: 54px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 1em;
+}
+
+.footer ul{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.goBack {
+  position: fixed;
+  top: 40px;
+  left: 225px;
+  transform: rotate(30deg);
+  width: 150px;
+  height: 75px;
+  z-index: 100;
+  font-size: x-large;
+  color: rgb(194, 194, 194);
+}
+
+.goBackText {
+  position:fixed;
+  top: 0px;
+  left:280px;
+  width: 150px;
+  z-index: 100;
+  font-size: larger;
+  color: rgb(194, 194, 194);
+}  
+
+.mapDiv {
+  height: 500px;
+}
